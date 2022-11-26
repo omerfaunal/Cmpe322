@@ -22,8 +22,7 @@ void* interquartileRange(void* arg);
 
 int* generateRandomNInteger(int n, int min, int max) {
     //This function generates n random integers between min and max and returns them in an array
-    //srand((unsigned int)(time(NULL)));
-    srand((unsigned int)10);
+    srand((unsigned int)(time(NULL)));
     for(int i = 0; i < n; i++) {
         arr[i] = rand() % (max - min + 1) + min;
     }
@@ -34,7 +33,7 @@ void writeToFile(double* arr, int n, std::string fileName) {
     std::ofstream file;
     file.open(fileName);
     for(int i = 0; i < n; i++) {
-        file << arr[i] << std::endl;
+        file << std::fixed << std::setprecision(5)<< arr[i] << std::endl;
     }
     file.close();
 }
@@ -148,31 +147,20 @@ void* range(void* arg) {
 
 void* mode(void* arg) {
     int n = *(int*)arg;
-    int number = arr[0];
-    int mode = number;
-    int count = 1;
-    int countMode = 1;
+    int* count = (int*)calloc(10000, sizeof(int));
 
-    for (int i=1; i<n; i++)
-    {
-        if (arr[i] == number) 
-        {
-            count++;
-        }
-        else
-        {
-            if (count > countMode) 
-            {
-                countMode = count;
-                mode = number;
-            }
-            count = 1;
-            number = arr[i];
-        }
-        if (count > countMode) { countMode = count; mode = number;}
+    for (int i=0; i < n; i++) {
+        count[arr[i]]++;
     }
+
+    int index = 9999;
+    for (int i=9998; i >=0; i--) {
+        if (count[i] >= count[index])
+            index = i;
+    }
+
     double* result = (double* ) malloc(sizeof(double));
-    *result = mode;
+    *result = index;
     pthread_exit((void*) result);
 }
 
