@@ -20,8 +20,8 @@ double interquartileRange(int n);
 
 int* generateRandomNInteger(int n, int min, int max) {
     //This function generates n random integers between min and max and returns them in an array
-    //srand((unsigned int)time(NULL));
-    srand((unsigned int)(time(NULL)));
+    //srand((unsigned int)(time(NULL)));
+    srand((unsigned int)10);
     for(int i = 0; i < n; i++) {
         arr[i] = rand() % (max - min + 1) + min;
     }

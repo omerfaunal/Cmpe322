@@ -1,16 +1,16 @@
-all: oneThread fiveThread tenThread
+all: oneThread fiveThreads tenThreads
 
 oneThread: oneThread.cpp
 	g++ -std=c++11 -o oneThread oneThread.cpp
-fiveThread: fiveThread.cpp
-	g++ -std=c++11 -o fiveThread fiveThread.cpp
-tenThread: tenThread.cpp
-	g++ -std=c++11 -o tenThread tenThread.cpp
+fiveThreads: fiveThreads.cpp
+	g++ -std=c++11 -o fiveThreads fiveThreads.cpp
+tenThreads: tenThreads.cpp
+	g++ -std=c++11 -o tenThreads tenThreads.cpp
 
 clean:
-	rm -f oneThread fiveThread tenThread *.txt
+	rm -f oneThread fiveThreads tenThreads *.txt
 
-run: ./oneThread ./fiveThread ./tenThread
+run: ./oneThread ./fiveThreads ./tenThreads
 	@./oneThread $(n)
-	@./fiveThread $(n)
-	@./tenThread $(n)
+	@./fiveThreads $(n)
+	@./tenThreads $(n)

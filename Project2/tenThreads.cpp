@@ -22,7 +22,8 @@ void* interquartileRange(void* arg);
 
 int* generateRandomNInteger(int n, int min, int max) {
     //This function generates n random integers between min and max and returns them in an array
-    srand((unsigned int)(time(NULL)));
+    //srand((unsigned int)(time(NULL)));
+    srand((unsigned int)10);
     for(int i = 0; i < n; i++) {
         arr[i] = rand() % (max - min + 1) + min;
     }
@@ -97,8 +98,7 @@ int main(int argc, char const *argv[])
     auto ms_int = duration_cast<microseconds>(end - start);
     out[10] = ms_int.count() / 1000000.0;
 
-    writeToFile(out, 11, "output2.txt");
-
+    writeToFile(out, 11, "output3.txt");
     
     return 0;
 }
