@@ -4,6 +4,8 @@
 #include <math.h>
 #include <chrono>
 #include <fstream>
+#include <iomanip>
+#include <algorithm>
 
 int* arr;
 int* arr2;

@@ -4,6 +4,8 @@
 #include <math.h>
 #include <chrono>
 #include <fstream>
+#include <iomanip>
+#include <algorithm>
 
 int* arr;
 //int arr[] = {1, 2, 5, 6, 7, 9, 12, 15, 18, 19, 27};
