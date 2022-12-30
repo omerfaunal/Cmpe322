@@ -1,0 +1,34 @@
+[vtm2]: Customer3,3TL,Bob
+[vtm2]: Customer6,3TL,Bob
+[vtm2]: Customer9,3TL,Bob
+[vtm2]: Customer24,3TL,Bob
+[vtm2]: Customer15,3TL,Bob
+[vtm2]: Customer21,3TL,Bob
+[vtm2]: Customer12,3TL,Bob
+[vtm2]: Customer18,3TL,Bob
+[vtm2]: Customer27,3TL,Bob
+[vtm1]: Customer2,2TL,Bob
+[vtm1]: Customer8,2TL,Bob
+[vtm1]: Customer26,2TL,Bob
+[vtm1]: Customer17,2TL,Bob
+[vtm1]: Customer5,2TL,Bob
+[vtm1]: Customer23,2TL,Bob
+[vtm1]: Customer11,2TL,Bob
+[vtm1]: Customer20,2TL,Bob
+[vtm1]: Customer14,2TL,Bob
+[vtm3]: Customer7,1TL,Bob
+[vtm3]: Customer10,1TL,Bob
+[vtm3]: Customer13,1TL,Bob
+[vtm3]: Customer4,1TL,Bob
+[vtm3]: Customer1,1TL,Bob
+[vtm3]: Customer28,1TL,Bob
+[vtm3]: Customer22,1TL,Bob
+[vtm3]: Customer19,1TL,Bob
+[vtm3]: Customer16,1TL,Bob
+[vtm3]: Customer25,1TL,Bob
+[Main]: All prepayments are completed.
+[Main]: Kevin: 0TL
+[Main]: Bob: 55TL
+[Main]: Stuart: 0TL
+[Main]: Otto: 0TL
+[Main]: Dave: 0TL
